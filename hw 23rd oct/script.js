@@ -32,6 +32,13 @@ arr.push(obj);
 
 }
 
+for (let i = 0; i < array.length; i++) {
+    arr=arr[i]+ arr;
+    
+}if (arr[i]>= arr){
+    arr= arr
+}
+
 console.log( arr.fname.sort()) 
 console.log(arr.lname.sort()) 
 console.log (arr.TZ.sort())
