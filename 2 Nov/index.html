@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <section id="form-area">
+        <div class="d-grid gap-2">
+          <button class="btn btn-success" id="show-hide" type="button">
+            Show Form
+          </button>
+        </div>
+        <div id="the-form" class="container" style="display: none">
+          <div class="row">
+            <div class="col col-4 col-lg-4"></div>
+            <div class="col col-4 col-lg-4">
+              <div class="mb-3">
+                <label for="input-category" class="form-label">Category</label>
+                <input type="text" class="form-control" id="input-category" />
+              </div>
+              <div class="mb-3">
+                <select class="form-select" id="input-brand">
+                  <option selected>Select a brand</option>
+                  <option value="Next">Next</option>
+                  <option value="Ted Baker">Ted Baker</option>
+                  <option value="Lipsy">Lipsy</option>
+                  <option value="Superdry">superdry</option>
+                  
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="input-price" class="form-label">Price</label>
+                <input type="text" class="form-control" id="input-price" />
+              </div>
+              <div class="mb-3">
+                <label for="input-image" class="form-label">Image</label>
+                <input type="text" class="form-control" id="input-image" />
+              </div>
+              <div class="mb-3">
+                <label for="input-material" class="form-label">Material</label>
+                <input type="text" class="form-control" id="input-material" />
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" id="add-article" type="button">
+                  Add Article
+                </button>
+              </div>
+            </div>
+            <div class="col col-4 col-lg-4"></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  
+
+    <script src ="script.js"></script>
+</body>
+</html>
