@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+main{
+   display: flex;
+   align-content: center;
+   justify-content: center;
+}
+section{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.title{
+    width: 99vw;
+    height: 100px;
+    background-color: yellow;
+    color: purple;
+    align-content: center;
+    justify-content: center;
+    font-size: 70px;
+    padding: 12px;
+    border: solid black;
+    text-align: center;
+
+}
+
+.gameContainer{
+    width:75vw;
+    height:550px;
+    background-color: black;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    position: absolute;
+    left:7px;
+    display: flex;
+
+}
+
+#catchMe{
+    width: 100px;
+    height:35px;
+    background-color: aqua;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: black solid;
+
+}
+
+.panelContainer{
+    width:22vw;
+    height:550px;
+    position: absolute;
+    right:7px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    display: grid;
+    background-color: aqua;
+    display: flex;
+
+
+}
+
+.panel{
+    width: 18vw;
+    height: 490px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(16,1fr);
+   position: absolute;
+   right: 25px;
+   bottom: 30px;
+   padding: 20px;
+   gap:10px;
+
+    
+}
+
+
+.hsdivs{
+ 
+    padding: 10px;
+    /* position: relative;  */
+
+
+  } 
+
+  .hsdivs {
+    position: relative;
+  
+
+  }
+  
+  .hsdivs[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -30%;
+    left: 70%;
+    background-color: rgb(25, 179, 158);
+    border-radius: 25px;
+    
+  }
+
+  .spinning{
+    animation:spin linear 2s infinite;
+    /* animation-duration: 2s; */
+  }
+  @keyframes spin{
+    from {transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+  }
+  #catchMe{
+    position:absolute;
+  }
+
+  /* .spinning2{
+    animation:spin 1.75s linear infinite;
+  }
+  .spinning3{
+    animation:spin 1.5s linear infinite;
+  }
+  .spinning4{
+    animation:spin 1.25s linear infinite;
+  }
+  .spinning5{
+    animation:spin 1.s linear infinite;
+  } */
+  .hide{
+    display: none;
+  }
+ .p:hover +.hide{
+  display: block;
+width: fit-content;
+  border: black;
+  border-radius: 50px;
+  position: absolute;
+  right:-30px;
+  top:-10px;
+  font-size: small;
+  background-color: aqua;
+ } 
